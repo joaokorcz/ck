@@ -30,6 +30,9 @@ public class LCOMTest extends BaseTest {
 		CKClassResult d = report.get("lcom.TermsOfServiceController");
 		Assertions.assertEquals(0, d.getLcom());
 
+		CKClassResult e = report.get("lcom.Empty");
+		Assertions.assertEquals(0, e.getLcom());
+
 	}
 	
 }
